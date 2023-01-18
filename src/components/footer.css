@@ -1,0 +1,14 @@
+.footer {
+  background-color: teal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vmin;
+}
+
+.socials {
+  max-height: 100px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5%;
+}

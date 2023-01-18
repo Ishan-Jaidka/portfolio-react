@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-link {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.page-title {
+  margin: 2vmin;
+  font-size: 7vmin;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-description {
+  margin: 10vmin;
+  text-align: center;
+}

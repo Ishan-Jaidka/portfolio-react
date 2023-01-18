@@ -1,0 +1,10 @@
+.navbar {
+  position: fixed;
+  max-height: 10vh;
+  width: 100vw;
+  background-color: teal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vmin;
+}
