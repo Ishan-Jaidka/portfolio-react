@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import MediaCard from "../components/mediaCard";
-import Github from "../components/socials/github";
 import "./projects.css";
 
 export default function Projects() {
