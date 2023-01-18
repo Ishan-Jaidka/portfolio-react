@@ -15,9 +15,6 @@ export default function MediaCard({
   maxWidth = "90vw",
   margin = 1,
 }) {
-  const cardSelected = () => {
-    window.location.href = card_action_url;
-  };
   return (
     <Card
       sx={{ width: width, margin: margin, maxWidth: maxWidth }}
