@@ -3,26 +3,28 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { CardActionArea, CardActions } from "@mui/material";
 
 export default function MediaCard({
   title,
   description,
-  gh_url,
-  website,
+  card_action_url,
+  view_page_url,
+  data = null,
   width = 395,
   maxWidth = "90vw",
   margin = 1,
 }) {
   const cardSelected = () => {
-    window.location.href = gh_url;
+    window.location.href = card_action_url;
   };
   return (
-    <Button onClick={cardSelected}>
-      <Card
-        sx={{ width: width, margin: margin, maxWidth: maxWidth }}
-        variant="outlined"
-        raised={true}
-      >
+    <Card
+      sx={{ width: width, margin: margin, maxWidth: maxWidth }}
+      variant="outlined"
+      raised={true}
+    >
+      <CardActionArea href={card_action_url}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
@@ -30,13 +32,15 @@ export default function MediaCard({
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
-          {website && (
-            <Typography variant="subtitle1" color="text.secondary">
-              <a href={website}>View Page</a>
-            </Typography>
-          )}
         </CardContent>
-      </Card>
-    </Button>
+      </CardActionArea>
+      {view_page_url && (
+        <CardActions>
+          <Button size="small" color="primary" href={view_page_url}>
+            View Page
+          </Button>
+        </CardActions>
+      )}
+    </Card>
   );
 }

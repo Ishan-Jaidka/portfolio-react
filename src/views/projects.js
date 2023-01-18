@@ -19,8 +19,9 @@ export default function Projects() {
               <MediaCard
                 title={proj.name}
                 description={proj.description}
-                gh_url={proj.html_url}
-                website={proj.homepage}
+                card_action_url={proj.html_url}
+                view_page_url={proj.homepage}
+                data={proj}
               />
             );
           }
