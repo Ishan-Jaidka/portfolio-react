@@ -15,13 +15,16 @@ export default function Projects() {
         if (res.status !== 200) throw new Error(res.statusText);
         let projectArray = [];
         res.data.forEach((proj) => {
-          projectArray.push(
-            <MediaCard
-              title={proj.name}
-              description={proj.description}
-              url={proj.svn_url}
-            />
-          );
+          if (!proj.fork || !proj.archived) {
+            projectArray.push(
+              <MediaCard
+                title={proj.name}
+                description={proj.description}
+                gh_url={proj.html_url}
+                website={proj.homepage}
+              />
+            );
+          }
         });
         setProjects(projectArray);
         setStatus("Success");

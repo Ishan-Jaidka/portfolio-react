@@ -7,12 +7,13 @@ import Typography from "@mui/material/Typography";
 export default function MediaCard({
   title,
   description,
-  url,
+  gh_url,
+  website,
   width = 395,
   margin = 1,
 }) {
   const cardSelected = () => {
-    window.location.href = url;
+    window.location.href = gh_url;
   };
   return (
     <Button onClick={cardSelected}>
@@ -24,6 +25,11 @@ export default function MediaCard({
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
+          {website && (
+            <Typography variant="subtitle1" color="text.secondary">
+              <a href={website}>View Page</a>
+            </Typography>
+          )}
         </CardContent>
       </Card>
     </Button>
