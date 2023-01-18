@@ -5,6 +5,7 @@ import AboutMe from "./views/aboutMe";
 import NavBar from "./components/navBar";
 import Projects from "./views/projects";
 import Footer from "./components/footer";
+import PageNotFound from "./views/pageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
   },
 ]);
 
