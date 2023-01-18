@@ -7,6 +7,9 @@ export default function PageNotFound() {
       <div className="page-description">
         It may be in development. Please try again later.
       </div>
+      <a className="page-description" href="/">
+        Click here to return home.
+      </a>
     </>
   );
 }
