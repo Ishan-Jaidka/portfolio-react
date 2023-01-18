@@ -10,6 +10,7 @@ export default function MediaCard({
   gh_url,
   website,
   width = 395,
+  maxWidth = "90vw",
   margin = 1,
 }) {
   const cardSelected = () => {
@@ -17,7 +18,11 @@ export default function MediaCard({
   };
   return (
     <Button onClick={cardSelected}>
-      <Card sx={{ width: width, margin: margin }}>
+      <Card
+        sx={{ width: width, margin: margin, maxWidth: maxWidth }}
+        variant="outlined"
+        raised={true}
+      >
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
