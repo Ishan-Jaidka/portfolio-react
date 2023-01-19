@@ -10,7 +10,6 @@ export default function MediaCard({
   description,
   card_action_url,
   view_page_url,
-  data = null,
   width = 395,
   maxWidth = "90vw",
   margin = 1,
@@ -21,7 +20,7 @@ export default function MediaCard({
       variant="outlined"
       raised={true}
     >
-      <CardActionArea href={card_action_url}>
+      <CardActionArea href={`/projects/${title}`}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
@@ -31,13 +30,17 @@ export default function MediaCard({
           </Typography>
         </CardContent>
       </CardActionArea>
-      {view_page_url && (
-        <CardActions>
+
+      <CardActions>
+        <Button size="small" color="primary" href={card_action_url}>
+          GitHub
+        </Button>
+        {view_page_url && (
           <Button size="small" color="primary" href={view_page_url}>
             View Page
           </Button>
-        </CardActions>
-      )}
+        )}
+      </CardActions>
     </Card>
   );
 }

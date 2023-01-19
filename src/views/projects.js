@@ -21,7 +21,6 @@ export default function Projects() {
                 description={proj.description}
                 card_action_url={proj.html_url}
                 view_page_url={proj.homepage}
-                data={proj}
               />
             );
           }
