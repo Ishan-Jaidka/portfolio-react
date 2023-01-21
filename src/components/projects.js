@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import MediaCard from "../components/mediaCard";
+import MediaCard from "./mediaCard";
 import "./projects.css";
 
 export default function Projects() {
@@ -35,11 +35,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="projects">
-      <div className="page-title">Projects</div>
-      <div className="page-description">
-        This page is a work in progress. Current projects on Github:
-      </div>
+    <div>
       {status === "Loading" && <div>Loading...</div>}
       {status === "Error" && <div>Error getting GitHub repos</div>}
       {status === "Success" && (
