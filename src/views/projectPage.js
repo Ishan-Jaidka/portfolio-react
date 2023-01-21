@@ -23,6 +23,7 @@ export default function ProjectPage() {
         setStatus("Error");
         console.error(err);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
