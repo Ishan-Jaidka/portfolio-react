@@ -32,9 +32,11 @@ export default function MediaCard({
       </CardActionArea>
 
       <CardActions>
-        <Button size="small" color="primary" href={card_action_url}>
-          GitHub
-        </Button>
+        {card_action_url && (
+          <Button size="small" color="primary" href={card_action_url}>
+            GitHub
+          </Button>
+        )}
         {view_page_url && (
           <Button size="small" color="primary" href={view_page_url}>
             View Page

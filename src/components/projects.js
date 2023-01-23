@@ -14,7 +14,7 @@ export default function Projects() {
         if (res.status !== 200) throw new Error(res.statusText);
         let projectArray = [];
         res.data.forEach((proj) => {
-          if (!proj.fork || !proj.archived) {
+          if (!proj.fork && !proj.archived) {
             projectArray.push(
               <MediaCard
                 title={proj.name}
