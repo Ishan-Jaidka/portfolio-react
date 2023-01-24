@@ -79,7 +79,10 @@ export default function ProjectsTabbed() {
           />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          This page is a work in progress. Please check back later.
+          <div className="tab-description">
+            These are projects I'm currently working on that aren't viewable on
+            GitHub.
+          </div>
           <Projects project_url={process.env.REACT_APP_CURRENT_PROJECTS} />
         </TabPanel>
       </Box>

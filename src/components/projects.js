@@ -39,7 +39,9 @@ export default function Projects({ project_url }) {
   return (
     <div>
       {status === "Loading" && <div>Loading...</div>}
-      {status === "Error" && <div>Error getting GitHub repos</div>}
+      {status === "Error" && (
+        <div>Error getting projects. Please check back later.</div>
+      )}
       {status === "Success" && (
         <div className="project-cards">{projects.map((proj) => proj)}</div>
       )}
