@@ -1,66 +1,54 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
+import { useLocation, useParams } from "react-router-dom";
 import Button from "@mui/material/Button";
 import "./projectPage.css";
 import { Stack } from "@mui/system";
+import { Typography } from "@mui/material";
 
 export default function ProjectPage() {
   const { projectname } = useParams();
-  const [projectData, setProjectData] = useState(null);
-  const [status, setStatus] = useState("Loading");
-
-  useEffect(() => {
-    axios
-      .get(`https://api.github.com/repos/Ishan-Jaidka/${projectname}`)
-      .then((res) => {
-        if (res.status !== 200) throw new Error(res.statusText);
-        setProjectData(res.data);
-        setStatus("Success");
-        console.log(projectData);
-      })
-      .catch((err) => {
-        setStatus("Error");
-        console.error(err);
-      });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { state } = useLocation();
 
   return (
     <div className="projectpage">
       <div className="page-title">{projectname}</div>
-      {status === "Loading" && (
-        <div className="page-description">Loading...</div>
-      )}
-      {status === "Error" && (
-        <div className="page-description">Error getting GitHub repos</div>
-      )}
-      {status === "Success" && (
-        <>
-          <div className="page-description">{projectData.description}</div>
-          <Stack direction="row" spacing={2}>
+      <>
+        <div className="page-description">
+          <Typography
+            variant="body"
+            color="white"
+            align="left"
+            sx={{ whiteSpace: "pre-line" }}
+          >
+            {state.summary
+              ? `${state.summary}\n\n${state.description}`
+              : state.description}
+          </Typography>
+        </div>
+        <Stack direction="row" spacing={2}>
+          {state.html_url && (
             <Button
               variant="contained"
               size="small"
               color="primary"
-              href={projectData.html_url}
+              href={state.html_url}
             >
               View On GitHub
             </Button>
-            {projectData.homepage && (
-              <Button
-                variant="contained"
-                size="small"
-                color="primary"
-                background-color="white"
-                href={projectData.homepage}
-              >
-                View Project
-              </Button>
-            )}
-          </Stack>
-        </>
-      )}
+          )}
+          {state.homepage && (
+            <Button
+              variant="contained"
+              size="small"
+              color="primary"
+              background-color="white"
+              href={state.homepage}
+            >
+              View Project
+            </Button>
+          )}
+        </Stack>
+      </>
     </div>
   );
 }

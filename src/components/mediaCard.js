@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function MediaCard({
   title,
@@ -13,19 +14,29 @@ export default function MediaCard({
   width = 395,
   maxWidth = "90vw",
   margin = 1,
+  data = null,
 }) {
+  const navigate = useNavigate();
+  const cardClicked = () => {
+    navigate(`/projects/${title}`, { state: data });
+  };
+
   return (
     <Card
       sx={{ width: width, margin: margin, maxWidth: maxWidth }}
       variant="outlined"
       raised={true}
     >
-      <CardActionArea href={`/projects/${title}`}>
+      <CardActionArea onClick={cardClicked}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ whiteSpace: "pre-line" }}
+          >
             {description}
           </Typography>
         </CardContent>

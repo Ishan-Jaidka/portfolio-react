@@ -74,10 +74,13 @@ export default function ProjectsTabbed() {
           <div className="tab-description">
             These are my projects on GitHub.
           </div>
-          <Projects />
+          <Projects
+            project_url={`https://api.github.com/users/${process.env.REACT_APP_GITHUB_USER}/repos`}
+          />
         </TabPanel>
         <TabPanel value={value} index={1}>
           This page is a work in progress. Please check back later.
+          <Projects project_url={process.env.REACT_APP_CURRENT_PROJECTS} />
         </TabPanel>
       </Box>
     </div>
