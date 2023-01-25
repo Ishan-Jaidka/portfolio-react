@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import PageNotFound from "./views/pageNotFound";
 import ProjectPage from "./views/projectPage";
 import ProjectsTabbed from "./views/projectsTabs";
+import PageInDevelopment from "./views/pageInDevelopment";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/:projectname",
     element: <ProjectPage />,
+  },
+  {
+    path: "/experience",
+    element: <PageInDevelopment title="Experience" />,
   },
   {
     path: "*",
