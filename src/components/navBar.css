@@ -8,3 +8,9 @@
   justify-content: space-around;
   padding: 2vmin;
 }
+
+.logo {
+  max-height: 100px;
+  height: 6vmin;
+  margin-right: 2vmin;
+}
