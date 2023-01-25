@@ -66,16 +66,18 @@ export default function ProjectsTabbed() {
             onChange={handleChange}
             aria-label="basic tabs example"
           >
-            <Tab label="Github Projects" {...a11yProps(0)} />
+            <Tab label="Published Projects" {...a11yProps(0)} />
             <Tab label="Current Projects" {...a11yProps(1)} />
+            <Tab label="Github Projects" {...a11yProps(2)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
           <div className="tab-description">
-            These are my projects on GitHub.
+            These are my projects that are published and live.
           </div>
           <Projects
             project_url={`https://api.github.com/users/${process.env.REACT_APP_GITHUB_USER}/repos`}
+            published={true}
           />
         </TabPanel>
         <TabPanel value={value} index={1}>
@@ -84,6 +86,14 @@ export default function ProjectsTabbed() {
             GitHub.
           </div>
           <Projects project_url={process.env.REACT_APP_CURRENT_PROJECTS} />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <div className="tab-description">
+            These are my projects on GitHub.
+          </div>
+          <Projects
+            project_url={`https://api.github.com/users/${process.env.REACT_APP_GITHUB_USER}/repos`}
+          />
         </TabPanel>
       </Box>
     </div>

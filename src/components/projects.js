@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import MediaCard from "./mediaCard";
 import "./projects.css";
 
-export default function Projects({ project_url }) {
+export default function Projects({ project_url, published = false }) {
   const [status, setStatus] = useState("Loading");
   const [projects, setProjects] = useState(null);
 
@@ -14,16 +14,29 @@ export default function Projects({ project_url }) {
         if (res.status !== 200) throw new Error(res.statusText);
         let projectArray = [];
         res.data.forEach((proj) => {
-          if (!proj.fork && !proj.archived) {
-            projectArray.push(
-              <MediaCard
-                title={proj.name}
-                description={proj.summary ? proj.summary : proj.description}
-                card_action_url={proj.html_url}
-                view_page_url={proj.homepage}
-                data={proj}
-              />
-            );
+          if (published) {
+            if (!proj.fork && !proj.archived && proj.homepage) {
+              projectArray.push(
+                <MediaCard
+                  title={proj.name}
+                  description={proj.summary ? proj.summary : proj.description}
+                  view_page_url={proj.homepage}
+                  data={proj}
+                />
+              );
+            }
+          } else {
+            if (!proj.fork && !proj.archived) {
+              projectArray.push(
+                <MediaCard
+                  title={proj.name}
+                  description={proj.summary ? proj.summary : proj.description}
+                  card_action_url={proj.html_url}
+                  view_page_url={proj.homepage}
+                  data={proj}
+                />
+              );
+            }
           }
         });
         setProjects(projectArray);
