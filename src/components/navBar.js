@@ -22,6 +22,7 @@ export default function NavBar() {
             sx={{
               flexGrow: 1,
               color: "white",
+              display: { xs: "none", md: "flex" },
             }}
           >
             Ishan Jaidka
