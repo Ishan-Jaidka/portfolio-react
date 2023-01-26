@@ -44,7 +44,18 @@ export default function ProjectPage() {
               background-color="white"
               href={state.homepage}
             >
-              View Project
+              View Page
+            </Button>
+          )}
+          {state.awards && (
+            <Button
+              variant="contained"
+              size="small"
+              color="primary"
+              background-color="white"
+              href={state.awards}
+            >
+              View Awards
             </Button>
           )}
         </Stack>

@@ -53,6 +53,11 @@ export default function MediaCard({
             View Page
           </Button>
         )}
+        {data.awards && (
+          <Button size="small" color="primary" href={data.awards}>
+            View Awards
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

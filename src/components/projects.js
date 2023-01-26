@@ -20,6 +20,7 @@ export default function Projects({ project_url, published = false }) {
                 <MediaCard
                   title={proj.name}
                   description={proj.summary ? proj.summary : proj.description}
+                  card_action_url={proj.html_url}
                   view_page_url={proj.homepage}
                   data={proj}
                 />
