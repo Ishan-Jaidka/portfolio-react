@@ -66,9 +66,9 @@ export default function ProjectsTabbed() {
             onChange={handleChange}
             aria-label="basic tabs example"
           >
-            <Tab label="Published Projects" {...a11yProps(0)} />
-            <Tab label="Current Projects" {...a11yProps(1)} />
-            <Tab label="Github Projects" {...a11yProps(2)} />
+            <Tab label="Published" {...a11yProps(0)} />
+            <Tab label="Current" {...a11yProps(1)} />
+            <Tab label="Github" {...a11yProps(2)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
