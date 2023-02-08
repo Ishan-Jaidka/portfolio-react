@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "type": "current",
+    "languages": {
+      "JavaScript": 0,
+      "C++": 0,
+      "Kotlin": 0,
+      "Python": 0,
+      "AWS": 0
+    },
     "name": "Automated-Greenhouse-Capstone",
     "summary": "Modular greenhouse automation and data collection using microcontrollers, AWS backend, and Android app UI communicating via a REST API.\nAwarded Bellevue College’s Best C.S. Capstone Project 21/22.",
     "description": "API:  Designed and built an AWS hosted REST API to create client-server architecture and implement CRUD operations and IoT communication, allowing easy, controlled frontend access to all cloud services.\nMicrocontroller: Connected ESP32 to AWS IoT Core, used MQTT to upload sensor data to Timestream & control devices, 3D printed custom enclosures.\nAWS Backend: Designed and built databases on AWS RDS & Timestream.\nAndroid app: Built a user-friendly frontend with Kotlin & Android Studio.",

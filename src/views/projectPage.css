@@ -4,3 +4,12 @@
   align-items: center;
   margin-top: 10vmin;
 }
+
+.language-icon {
+  width: 15vmin;
+  height: 15vmin;
+  margin: 2vmin;
+  margin-bottom: 5vmin;
+  /* background-color: white;
+  border-radius: 1vmin; */
+}
