@@ -1,0 +1,8 @@
+.download-button {
+  background-color: white;
+}
+
+.download-button:hover {
+  background-color: navy;
+  color: white;
+}
