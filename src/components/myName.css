@@ -20,6 +20,7 @@
 }
 
 .about-name:hover {
+  font-style: italic;
   background-color: transparent;
   font-size: 15vmin;
 }
@@ -38,5 +39,6 @@
 }
 
 .about-title:hover {
+  font-style: italic;
   font-size: 10vmin;
 }
