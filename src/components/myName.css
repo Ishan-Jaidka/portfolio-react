@@ -1,0 +1,40 @@
+.about-intro {
+  margin: 5vmin;
+  margin-top: 10vmin;
+  color: white;
+}
+
+.about-name {
+  border-radius: 50px;
+  padding: 5px;
+  padding-inline: 30px;
+  background-color: teal;
+  color: white;
+  margin: 5vmin;
+  font-size: 10vmin;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-name:hover {
+  background-color: transparent;
+  font-size: 15vmin;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-title-intro {
+  margin: 5vmin;
+  margin-bottom: 10vmin;
+  color: white;
+}
+
+.about-title {
+  color: white;
+}
+
+.about-title:hover {
+  font-size: 10vmin;
+  background-color: transparent;
+  color: white;
+}
