@@ -8,6 +8,26 @@ import PageNotFound from "./views/pageNotFound";
 import ProjectPage from "./views/projectPage";
 import ProjectsTabbed from "./views/projectsTabs";
 import PageInDevelopment from "./views/pageInDevelopment";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    background: {
+      paper: "#282c34",
+      light: "#34425A",
+    },
+    primary: {
+      main: "#004BA5",
+      light: "#0096FF",
+    },
+    secondary: {
+      main: "#FFFFFF",
+    },
+    warning: {
+      main: "#ffc242",
+    },
+  },
+});
 
 const router = createBrowserRouter([
   {
@@ -38,13 +58,15 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <div className="App-header">
-        <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <div>
+        <NavBar />
+        <div className="App-header">
+          <RouterProvider router={router} />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 
