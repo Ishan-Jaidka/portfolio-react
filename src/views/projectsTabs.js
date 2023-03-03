@@ -37,7 +37,7 @@ function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
-    sx: { color: "grey" },
+    sx: { color: "warning.main" },
   };
 }
 
@@ -65,6 +65,12 @@ export default function ProjectsTabbed() {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
+            TabIndicatorProps={{
+              style: {
+                background: "white",
+              },
+            }}
+            textColor="warning.main"
           >
             <Tab label="Published" {...a11yProps(0)} />
             <Tab label="Current" {...a11yProps(1)} />

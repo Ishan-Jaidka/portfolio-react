@@ -9,8 +9,8 @@
   border-radius: 50px;
   padding: 5px;
   padding-inline: 30px;
-  background-color: teal;
-  color: white;
+  background-color: #ffc242;
+  color: #282c34;
   margin: 5vmin;
   font-size: 10vmin;
   font-weight: bold;
@@ -20,7 +20,7 @@
 }
 
 .about-name:hover {
-  font-style: italic;
+  color: #ffc242;
   background-color: transparent;
   font-size: 15vmin;
 }
@@ -33,12 +33,11 @@
 }
 
 .about-title {
-  color: white;
+  color: #ffc242;
   font-size: 6vmin;
   transition: all 100ms ease-out 50ms;
 }
 
 .about-title:hover {
-  font-style: italic;
   font-size: 10vmin;
 }

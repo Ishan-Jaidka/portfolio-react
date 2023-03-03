@@ -23,18 +23,29 @@ export default function MediaCard({
 
   return (
     <Card
-      sx={{ width: width, margin: margin, maxWidth: maxWidth }}
+      sx={{
+        width: width,
+        margin: margin,
+        maxWidth: maxWidth,
+        border: "2px solid white",
+        backgroundColor: "background.light",
+      }}
       variant="outlined"
       raised={true}
     >
       <CardActionArea onClick={cardClicked}>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            color="primary.light"
+          >
             {title}
           </Typography>
           <Typography
             variant="body2"
-            color="text.secondary"
+            color="secondary.main"
             sx={{ whiteSpace: "pre-line" }}
           >
             {description}
@@ -44,17 +55,17 @@ export default function MediaCard({
 
       <CardActions>
         {card_action_url && (
-          <Button size="small" color="primary" href={card_action_url}>
+          <Button size="small" color="warning" href={card_action_url}>
             GitHub
           </Button>
         )}
         {view_page_url && (
-          <Button size="small" color="primary" href={view_page_url}>
+          <Button size="small" color="warning" href={view_page_url}>
             View Page
           </Button>
         )}
         {data.awards && (
-          <Button size="small" color="primary" href={data.awards}>
+          <Button size="small" color="warning" href={data.awards}>
             View Awards
           </Button>
         )}

@@ -17,15 +17,14 @@ export default function DownloadResume() {
     });
   };
   return (
-    <div>
-      <Button
-        size="large"
-        color="primary"
-        onClick={handleDownloadClick}
-        className="download-button"
-      >
-        Download Resume
-      </Button>
-    </div>
+    <Button
+      size="large"
+      color="warning"
+      onClick={handleDownloadClick}
+      sx={{ bgcolor: "primary.light" }}
+      className="download-button"
+    >
+      Download Resume
+    </Button>
   );
 }

@@ -1,5 +1,7 @@
+import { Button } from "@mui/material";
 import React from "react";
 import DownloadResume from "../components/socials/downloadResume";
+import "./pageInDevelopment.css";
 
 export default function PageInDevelopment({ title }) {
   return (
@@ -9,9 +11,17 @@ export default function PageInDevelopment({ title }) {
         This page is still in development. Please try again later.
       </div>
       <DownloadResume />
-      <a className="page-description" href="/">
-        Click here to return home.
-      </a>
+      <div className="page-dev-return-home">
+        <Button
+          href="/"
+          size="large"
+          color="warning"
+          className="download-button"
+          sx={{ bgcolor: "primary.light" }}
+        >
+          Click here to return home.
+        </Button>
+      </div>
     </>
   );
 }

@@ -12,7 +12,7 @@ import "./navBar.css";
 
 export default function NavBar() {
   return (
-    <AppBar position="fixed" sx={{ background: "teal" }}>
+    <AppBar position="fixed" sx={{ background: "primary.main" }}>
       <Toolbar>
         <IconButton href="/" size="large" edge="start" sx={{ mr: 2 }}>
           <img className="logo" src="/ishan-circle.png" alt="me" />
@@ -21,7 +21,7 @@ export default function NavBar() {
             component="div"
             sx={{
               flexGrow: 1,
-              color: "white",
+              color: "warning.main",
               display: { xs: "none", md: "flex" },
             }}
           >
@@ -34,13 +34,13 @@ export default function NavBar() {
           marginLeft="auto"
           divider={<Divider orientation="vertical" flexItem />}
         >
-          <Button sx={{ color: "white" }} href="/projects">
+          <Button sx={{ color: "warning.main" }} href="/projects">
             Projects
           </Button>
-          <Button sx={{ color: "white" }} href="/experience">
+          <Button sx={{ color: "warning.main" }} href="/experience">
             Experience
           </Button>
-          <Button sx={{ color: "white" }} href="/about">
+          <Button sx={{ color: "warning.main" }} href="/about">
             About Me
           </Button>
         </Stack>
