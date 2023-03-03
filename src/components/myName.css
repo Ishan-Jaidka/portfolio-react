@@ -15,7 +15,8 @@
   font-size: 10vmin;
   font-weight: bold;
   text-align: center;
-  transition: background-color font-size 100ms ease-out 200ms;
+  transition: font-size 100ms ease-out 200ms;
+  transition: background-color ease-out 200ms;
 }
 
 .about-name:hover {
