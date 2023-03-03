@@ -16,7 +16,7 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  transition: font-size 100ms ease-out 50ms;
+  transition: all 100ms ease-out 50ms;
 }
 
 .about-name:hover {
@@ -34,7 +34,7 @@
 .about-title {
   color: white;
   font-size: 6vmin;
-  transition: font-size 100ms ease-out 50ms;
+  transition: all 100ms ease-out 50ms;
 }
 
 .about-title:hover {
