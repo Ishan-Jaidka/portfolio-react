@@ -2,6 +2,7 @@
   margin: 5vmin;
   margin-top: 10vmin;
   color: white;
+  font-size: 6vmin;
 }
 
 .about-name {
@@ -14,27 +15,27 @@
   font-size: 10vmin;
   font-weight: bold;
   text-align: center;
+  transition: background-color font-size 100ms ease-out 200ms;
 }
 
 .about-name:hover {
   background-color: transparent;
   font-size: 15vmin;
-  font-weight: bold;
-  text-align: center;
 }
 
 .about-title-intro {
   margin: 5vmin;
   margin-bottom: 10vmin;
   color: white;
+  font-size: 6vmin;
 }
 
 .about-title {
   color: white;
+  font-size: 6vmin;
+  transition: font-size 200ms ease-out 100ms;
 }
 
 .about-title:hover {
   font-size: 10vmin;
-  background-color: transparent;
-  color: white;
 }
