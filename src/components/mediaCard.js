@@ -61,6 +61,8 @@ export default function MediaCard({
             color="warning"
             href={card_action_url}
             sx={{ bgcolor: "primary.main" }}
+            target="_blank"
+            rel="noreferrer"
           >
             GitHub
           </Button>
@@ -72,6 +74,8 @@ export default function MediaCard({
             color="warning"
             href={view_page_url}
             sx={{ bgcolor: "primary.main" }}
+            target="_blank"
+            rel="noreferrer"
           >
             View Page
           </Button>
@@ -83,6 +87,8 @@ export default function MediaCard({
             color="warning"
             href={data.awards}
             sx={{ bgcolor: "primary.main" }}
+            target="_blank"
+            rel="noreferrer"
           >
             View Awards
           </Button>
