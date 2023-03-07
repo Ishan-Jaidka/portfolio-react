@@ -55,17 +55,35 @@ export default function MediaCard({
 
       <CardActions>
         {card_action_url && (
-          <Button size="small" color="warning" href={card_action_url}>
+          <Button
+            variant="outlined"
+            size="small"
+            color="warning"
+            href={card_action_url}
+            sx={{ bgcolor: "primary.main" }}
+          >
             GitHub
           </Button>
         )}
         {view_page_url && (
-          <Button size="small" color="warning" href={view_page_url}>
+          <Button
+            variant="outlined"
+            size="small"
+            color="warning"
+            href={view_page_url}
+            sx={{ bgcolor: "primary.main" }}
+          >
             View Page
           </Button>
         )}
         {data.awards && (
-          <Button size="small" color="warning" href={data.awards}>
+          <Button
+            variant="outlined"
+            size="small"
+            color="warning"
+            href={data.awards}
+            sx={{ bgcolor: "primary.main" }}
+          >
             View Awards
           </Button>
         )}

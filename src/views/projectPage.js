@@ -65,32 +65,33 @@ export default function ProjectPage() {
         <Stack direction="row" spacing={2}>
           {state.html_url && (
             <Button
-              variant="contained"
+              variant="outlined"
               size="small"
-              color="primary"
+              color="warning"
               href={state.html_url}
+              sx={{ bgcolor: "primary.main" }}
             >
               View On GitHub
             </Button>
           )}
           {state.homepage && (
             <Button
-              variant="contained"
+              variant="outlined"
               size="small"
-              color="primary"
-              background-color="white"
+              color="warning"
               href={state.homepage}
+              sx={{ bgcolor: "primary.main" }}
             >
               View Page
             </Button>
           )}
           {state.awards && (
             <Button
-              variant="contained"
+              variant="outlined"
               size="small"
-              color="primary"
-              background-color="white"
+              color="warning"
               href={state.awards}
+              sx={{ bgcolor: "primary.main" }}
             >
               View Awards
             </Button>

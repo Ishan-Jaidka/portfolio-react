@@ -18,10 +18,11 @@ export default function DownloadResume() {
   };
   return (
     <Button
+      variant="outlined"
       size="large"
       color="warning"
       onClick={handleDownloadClick}
-      sx={{ bgcolor: "primary.light" }}
+      sx={{ bgcolor: "primary.main" }}
       className="download-button"
     >
       Download Resume

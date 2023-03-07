@@ -14,12 +14,13 @@ export default function PageInDevelopment({ title }) {
       <div className="page-dev-return-home">
         <Button
           href="/"
+          variant="outlined"
           size="large"
           color="warning"
           className="download-button"
-          sx={{ bgcolor: "primary.light" }}
+          sx={{ bgcolor: "primary.main" }}
         >
-          Click here to return home.
+          Click here to return home
         </Button>
       </div>
     </>
