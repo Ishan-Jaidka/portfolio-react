@@ -70,6 +70,8 @@ export default function ProjectPage() {
               color="warning"
               href={state.html_url}
               sx={{ bgcolor: "primary.main" }}
+              target="_blank"
+              rel="noreferrer"
             >
               View On GitHub
             </Button>
@@ -81,6 +83,8 @@ export default function ProjectPage() {
               color="warning"
               href={state.homepage}
               sx={{ bgcolor: "primary.main" }}
+              target="_blank"
+              rel="noreferrer"
             >
               View Page
             </Button>
@@ -92,6 +96,8 @@ export default function ProjectPage() {
               color="warning"
               href={state.awards}
               sx={{ bgcolor: "primary.main" }}
+              target="_blank"
+              rel="noreferrer"
             >
               View Awards
             </Button>
