@@ -38,3 +38,11 @@
   text-align: center;
   color: white;
 }
+
+.vertical-gap {
+  margin-bottom: 3vmin;
+}
+
+.above-title-margin {
+  margin-top: 10vh;
+}
