@@ -1,0 +1,71 @@
+{
+  "about": "Software engineer with 1 year of professional full stack development experience and a passion for learning, interpersonal connections, and all things web development, automation, and robotics. Looking for an opportunity to combine my curiosity about new technology with my software engineering background to help build the future.",
+  "skills": [
+    "Highly motivated self-starter with excellent communication, problem solving, and interpersonal skills. Lifetime learner, tinkerer, and team collaborator experienced in both Agile and Waterfall methodologies."
+  ],
+  "experience": [
+    {
+      "company": "Jumpshot",
+      "title": "Full Stack Developer",
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "React.js",
+        "MongoDB",
+        "Postman",
+        "Jira",
+        "HTML",
+        "CSS"
+      ],
+      "startDate": "November 2022",
+      "endDate": "Present",
+      "description": [
+        "Built an end to end UI/UX prototype for an entertainment venue to present to investors and secure funding including the following:",
+        "\tUser registration, game selection, and game logic using React.",
+        "\tBackend using MongoDB, Express.js, and Node.js.",
+        "\tVirtual reality of gameplay using A-Frame.",
+        "\tService to connect and orchestrate the hardware component, motion tracking AI, and frontend using Socket.io."
+      ]
+    },
+    {
+      "company": "GetSetUp",
+      "title": "Software Engineer",
+      "technologies": [
+        "TypeScript",
+        "Python",
+        "Next.js",
+        "React.js",
+        "SQL",
+        "Jira",
+        "Node.js",
+        "AWS",
+        "GraphQL"
+      ],
+      "startDate": "March 2022",
+      "endDate": "November 2022",
+      "description": [
+        "Optimized website search experience by adjusting Algolia configurations and implementing event based UX tracking to quantify the effects of each change viewable in Metabase reports.",
+        "Reduced a company estimated $1m/year in support costs by enabling agents to quickly and effectively interact with multiple users and decreasing common support tickets through the following:",
+        "\tMigrated to Zendesk CRM by building a custom help center, integrating the chat widget, connecting user databases via event based microservices, and building an import service for existing data.",
+        "\tWorked with existing company infrastructure to pipe contextual data to Zendesk tickets for class chat sessions and identify users to agents."
+      ]
+    },
+    {
+      "company": "Edge and Spoke",
+      "title": "Assistant Sales Manager, Bike Fit Manager, Bike and Ski Technician",
+      "startDate": "September 2016",
+      "endDate": "October 2020",
+      "description": [
+        "Managed a team of associates and inventory to ensure customer satisfaction and loyalty through effective communication for a diverse customer base."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Bellevue College",
+      "degree": "B.S. Computer Science, cum laude",
+      "startDate": "January 2019",
+      "endDate": "June 2022"
+    }
+  ]
+}
