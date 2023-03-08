@@ -1,0 +1,13 @@
+.hr-half-divider {
+  width: 50vw;
+  margin-left: 0;
+}
+
+.hr-quarter-divider {
+  width: 25vw;
+  margin-left: 0;
+}
+
+.resume-outerdiv {
+  margin-inline: 5vw;
+}

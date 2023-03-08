@@ -39,7 +39,7 @@ export default function MediaCard({
             gutterBottom
             variant="h5"
             component="div"
-            color="primary.light"
+            color="warning.main"
           >
             {title}
           </Typography>

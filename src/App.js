@@ -7,8 +7,8 @@ import Footer from "./components/footer";
 import PageNotFound from "./views/pageNotFound";
 import ProjectPage from "./views/projectPage";
 import ProjectsTabbed from "./views/projectsTabs";
-import PageInDevelopment from "./views/pageInDevelopment";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Experience from "./views/experience";
 
 const theme = createTheme({
   palette: {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/experience",
-    element: <PageInDevelopment title="Experience" />,
+    element: <Experience />,
   },
   {
     path: "*",
