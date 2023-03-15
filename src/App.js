@@ -9,6 +9,7 @@ import ProjectPage from "./views/projectPage";
 import ProjectsTabbed from "./views/projectsTabs";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Experience from "./views/experience";
+import ExperiencePage from "./views/experiencePage";
 
 const theme = createTheme({
   palette: {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/experience",
     element: <Experience />,
+  },
+  {
+    path: "/experience/:company",
+    element: <ExperiencePage />,
   },
   {
     path: "*",
