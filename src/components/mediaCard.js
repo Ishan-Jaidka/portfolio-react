@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function MediaCard({
   title,
+  linkto = "projects",
   description,
   card_action_url,
   view_page_url,
@@ -18,7 +19,7 @@ export default function MediaCard({
 }) {
   const navigate = useNavigate();
   const cardClicked = () => {
-    navigate(`/projects/${title}`, { state: data });
+    navigate(`/${linkto}/${title}`, { state: data });
   };
 
   return (
