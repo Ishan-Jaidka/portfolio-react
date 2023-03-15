@@ -73,6 +73,54 @@ export default function LanguageIcon({ className, language }) {
           alt="Kotlin icon"
         />
       );
+    case "Node.js":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+          alt="Node.js icon"
+        />
+      );
+    case "React.js":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+          alt="React.js icon"
+        />
+      );
+    case "Next.js":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+          alt="Next.js icon"
+        />
+      );
+    case "GraphQL":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg"
+          alt="GraphQL icon"
+        />
+      );
+    case "SQL":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+          alt="SQL icon"
+        />
+      );
+    case "Jira":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg"
+          alt="Jira icon"
+        />
+      );
     default:
       break;
   }
