@@ -121,6 +121,30 @@ export default function LanguageIcon({ className, language }) {
           alt="Jira icon"
         />
       );
+    case "Linux":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+          alt="Jira icon"
+        />
+      );
+    case "Ubuntu":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
+          alt="Jira icon"
+        />
+      );
+    case "MongoDB":
+      return (
+        <img
+          className={className}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+          alt="Jira icon"
+        />
+      );
     default:
       break;
   }

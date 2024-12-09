@@ -12,6 +12,8 @@
         "Node.js",
         "React.js",
         "MongoDB",
+        "Python",
+        "Linux",
         "Postman",
         "Jira",
         "HTML",
@@ -20,11 +22,14 @@
       "startDate": "November 2022",
       "endDate": "Present",
       "description": [
-        "Built an end to end UI/UX prototype for an entertainment venue to present to investors and secure funding including the following:",
-        "\tUser registration, game selection, and game logic using React.",
-        "\tBackend using MongoDB, Express.js, and Node.js.",
-        "\tVirtual reality of gameplay using A-Frame.",
-        "\tService to connect and orchestrate the hardware component, motion tracking AI, and frontend using Socket.io."
+        "Designed a full-stack prototype for a next gen basketball entertainment venue, integrating React, Node.js, and MongoDB for seamless game management and UX.",
+        "\tCreated an HMI and custom sensor modules communicating via MQTT and Modbus to enable real-time gameplay on a PLC-operated machine.",
+        "\tTrained and implemented a custom computer vision model to track players and basketballs in low-light conditions using Python, CVAT, and Roboflow.",
+        "\tEngineered real-time synchronization between hardware, AI, and UI with Socket.io, MQTT, & Modbus to enable live gameplay with dynamic graphics.",
+        "\tCreated AI-powered games, leveraging LLMs to dynamically generate gameplay.",
+        "\tCo-invented hardware/software solutions described in 4 patent applications.",
+        "\tDelivered a prototype experience that secured >$5m of investor funding.",
+        "\tProduced specifications and vetted vendors to iterate & scale into final production."
       ]
     },
     {
@@ -44,10 +49,10 @@
       "startDate": "March 2022",
       "endDate": "November 2022",
       "description": [
-        "Optimized website search experience by adjusting Algolia configurations and implementing event based UX tracking to quantify the effects of each change viewable in Metabase reports.",
-        "Reduced a company estimated $1m/year in support costs by enabling agents to quickly and effectively interact with multiple users and decreasing common support tickets through the following:",
-        "\tMigrated to Zendesk CRM by building a custom help center, integrating the chat widget, connecting user databases via event based microservices, and building an import service for existing data.",
-        "\tWorked with existing company infrastructure to pipe contextual data to Zendesk tickets for class chat sessions and identify users to agents."
+        "Owned full-stack development to reduce support costs by >$1M/yr by automating agent workflows and minimizing ticket volume, collaborating with support leads:",
+        "\tMigrated to Zendesk CRM by building a custom help center, integrating the chat widget, and connecting user databases via event-driven microservices.",
+        "\tDeveloped services to import existing data and to merge contextual data into Zendesk tickets for class chat sessions, enabling agents to identify users.",
+        "Implemented event-based UX tracking to measure the impact of interface optimizations on search performance and user engagement."
       ]
     },
     {
