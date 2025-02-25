@@ -18,6 +18,7 @@ export default function DownloadResume() {
   };
   return (
     <Button
+      data-aos="fade-up"
       variant="outlined"
       size="large"
       color="warning"

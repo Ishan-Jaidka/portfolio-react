@@ -50,8 +50,11 @@ export default function ProjectsTabbed() {
 
   return (
     <div className="project-tabs-page">
-      <div className="page-title">Projects</div>
+      <div className="page-title" data-aos="fade-up">
+        Projects
+      </div>
       <Box
+        data-aos="fade-down"
         sx={{
           width: "100%",
           display: "flex",
