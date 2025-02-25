@@ -4,6 +4,11 @@ import "./headShot.css";
 
 export default function HeadShot() {
   return (
-    <img className="headshot" src={ishan} alt="Headshot of Ishan Jaidka" />
+    <img
+      className="headshot"
+      data-aos="fade-up"
+      src={ishan}
+      alt="Headshot of Ishan Jaidka"
+    />
   );
 }

@@ -1,5 +1,6 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useEffect } from "react";
 import HomePage from "./views/homePage";
 import AboutMe from "./views/aboutMe";
 import NavBar from "./components/navBar";
@@ -10,6 +11,9 @@ import ProjectsTabbed from "./views/projectsTabs";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Experience from "./views/experience";
 import ExperiencePage from "./views/experiencePage";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const theme = createTheme({
   palette: {
@@ -63,6 +67,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <div>
