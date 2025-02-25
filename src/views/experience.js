@@ -24,7 +24,9 @@ export default function Experience() {
   return (
     <>
       <div className="above-title-margin" />
-      <div className="page-title">Experience</div>
+      <div className="page-title" data-aos="fade-up">
+        Experience
+      </div>
       <div className="vertical-gap" />
       <DownloadResume />
       <div>

@@ -6,20 +6,20 @@ import "./resumeHtml.css";
 export default function ResumeHtml({ data }) {
   return (
     <div className="resume-outerdiv">
-      <h4>{data.about}</h4>
-      <hr />
-      <hr />
-      <h2>Skills</h2>
-      <hr className="hr-half-divider" />
+      <h4 data-aos="fade-down">{data.about}</h4>
+      <hr data-aos="fade-down" />
+      <hr data-aos="fade-down" />
+      <h2 data-aos="fade-down">Skills</h2>
+      <hr data-aos="fade-down" className="hr-half-divider" />
       <div>
         {data.skills.map((skill) => (
-          <div>{skill}</div>
+          <div data-aos="fade-down">{skill}</div>
         ))}
       </div>
-      <hr />
-      <hr />
-      <h2>Experience</h2>
-      <hr className="hr-half-divider" />
+      <hr data-aos="fade-down" />
+      <hr data-aos="fade-down" />
+      <h2 data-aos="fade-down">Experience</h2>
+      <hr data-aos="fade-down" className="hr-half-divider" />
       <div>
         <div className="project-cards">
           {data.experience.map((exp) => (
@@ -35,18 +35,18 @@ export default function ResumeHtml({ data }) {
         </div>
         {data.experience.map((exp) => (
           <>
-            <hr className="hr-half-divider" />
-            <hr className="hr-half-divider" />
-            <h3>{exp.company}</h3>
-            <h5>{exp.title}</h5>
-            <hr className="hr-quarter-divider" />
-            <h6>
+            <hr data-aos="fade-down" className="hr-half-divider" />
+            <hr data-aos="fade-down" className="hr-half-divider" />
+            <h3 data-aos="fade-down">{exp.company}</h3>
+            <h5 data-aos="fade-down">{exp.title}</h5>
+            <hr data-aos="fade-down" className="hr-quarter-divider" />
+            <h6 data-aos="fade-down">
               {exp.startDate} - {exp.endDate}
             </h6>
 
             <>
               {exp.description.map((desc) => (
-                <h6>{desc}</h6>
+                <h6 data-aos="fade-down">{desc}</h6>
               ))}
             </>
             {exp.technologies && (
@@ -58,15 +58,15 @@ export default function ResumeHtml({ data }) {
             )}
           </>
         ))}
-        <hr />
-        <hr />
-        <h2>Education</h2>
-        <hr className="hr-half-divider" />
+        <hr data-aos="fade-down" />
+        <hr data-aos="fade-down" />
+        <h2 data-aos="fade-down">Education</h2>
+        <hr data-aos="fade-down" className="hr-half-divider" />
         {data.education.map((edu) => (
           <>
-            <h3>{edu.school}</h3>
-            <h4>{edu.degree}</h4>
-            <h6>
+            <h3 data-aos="fade-down">{edu.school}</h3>
+            <h4 data-aos="fade-down">{edu.degree}</h4>
+            <h6 data-aos="fade-down">
               {edu.startDate} - {edu.endDate}
             </h6>
           </>

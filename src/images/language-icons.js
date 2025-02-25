@@ -4,6 +4,7 @@ export default function LanguageIcon({ className, language }) {
     case "JavaScript":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
           alt="JavaScript icon"
@@ -12,6 +13,7 @@ export default function LanguageIcon({ className, language }) {
     case "CSS":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
           alt="CSS3 icon"
@@ -20,6 +22,7 @@ export default function LanguageIcon({ className, language }) {
     case "HTML":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
           alt="HTML5 icon"
@@ -28,6 +31,7 @@ export default function LanguageIcon({ className, language }) {
     case "C++":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
           alt="C++ icon"
@@ -36,6 +40,7 @@ export default function LanguageIcon({ className, language }) {
     case "TypeScript":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
           alt="TypeScript icon"
@@ -44,6 +49,7 @@ export default function LanguageIcon({ className, language }) {
     case "Java":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
           alt="Java icon"
@@ -52,6 +58,7 @@ export default function LanguageIcon({ className, language }) {
     case "Python":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
           alt="Python icon"
@@ -60,6 +67,7 @@ export default function LanguageIcon({ className, language }) {
     case "AWS":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
           alt="AWS icon"
@@ -68,6 +76,7 @@ export default function LanguageIcon({ className, language }) {
     case "Kotlin":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg"
           alt="Kotlin icon"
@@ -76,6 +85,7 @@ export default function LanguageIcon({ className, language }) {
     case "Node.js":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
           alt="Node.js icon"
@@ -84,6 +94,7 @@ export default function LanguageIcon({ className, language }) {
     case "React.js":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
           alt="React.js icon"
@@ -92,6 +103,7 @@ export default function LanguageIcon({ className, language }) {
     case "Next.js":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
           alt="Next.js icon"
@@ -100,6 +112,7 @@ export default function LanguageIcon({ className, language }) {
     case "GraphQL":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg"
           alt="GraphQL icon"
@@ -108,6 +121,7 @@ export default function LanguageIcon({ className, language }) {
     case "SQL":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
           alt="SQL icon"
@@ -116,6 +130,7 @@ export default function LanguageIcon({ className, language }) {
     case "Jira":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg"
           alt="Jira icon"
@@ -124,6 +139,7 @@ export default function LanguageIcon({ className, language }) {
     case "Linux":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
           alt="Jira icon"
@@ -132,6 +148,7 @@ export default function LanguageIcon({ className, language }) {
     case "Ubuntu":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
           alt="Jira icon"
@@ -140,6 +157,7 @@ export default function LanguageIcon({ className, language }) {
     case "MongoDB":
       return (
         <img
+          data-aos="flip-right"
           className={className}
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
           alt="Jira icon"

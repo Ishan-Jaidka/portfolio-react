@@ -24,6 +24,7 @@ export default function MediaCard({
 
   return (
     <Card
+      data-aos="flip-right"
       sx={{
         width: width,
         margin: margin,
