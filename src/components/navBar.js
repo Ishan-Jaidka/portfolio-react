@@ -38,42 +38,39 @@ export default function NavBar() {
             Ishan Jaidka
           </Typography>
         </IconButton>
-        <Stack
-          direction="row"
-          spacing={2}
-          marginLeft="auto"
-          data-aos="zoom-in-left"
-          divider={<Divider orientation="vertical" flexItem />}
-        >
-          <Button
-            sx={{
-              color: "warning.main",
-              "&:hover": { color: "white", fontWeight: "bold" },
-            }}
-            href="/projects"
-          >
-            Projects
-          </Button>
-          <Button
-            sx={{
-              color: "warning.main",
-              "&:hover": { color: "white", fontWeight: "bold" },
-            }}
-            href="/experience"
-          >
-            Experience
-          </Button>
-          <Button
-            sx={{
-              color: "warning.main",
-              "&:hover": { color: "white", fontWeight: "bold" },
-            }}
-            href="/about"
-          >
-            About Me
-          </Button>
-        </Stack>
+        <NavBarButtons />
       </Toolbar>
     </AppBar>
+  );
+}
+
+function NavBarButtons() {
+  const buttons = [
+    { label: "Projects", href: "/projects" },
+    { label: "Experience", href: "/experience" },
+    { label: "About Me", href: "/about" },
+  ];
+
+  return (
+    <Stack
+      direction="row"
+      spacing={2}
+      marginLeft="auto"
+      data-aos="zoom-in-left"
+      divider={<Divider orientation="vertical" flexItem />}
+    >
+      {buttons.map((button) => (
+        <Button
+          key={button.label}
+          sx={{
+            color: "warning.main",
+            "&:hover": { color: "white", fontWeight: "bold" },
+          }}
+          href={button.href}
+        >
+          {button.label}
+        </Button>
+      ))}
+    </Stack>
   );
 }
