@@ -1,5 +1,4 @@
 .headshot {
-  max-width: 90vw;
-  max-height: 50vh;
   border-radius: 10%;
+  max-width: 100%;
 }

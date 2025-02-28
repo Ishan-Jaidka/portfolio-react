@@ -1,13 +1,60 @@
 .aboutme {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding-top: 10vmin;
   padding-bottom: 10vmin;
 }
 
-.aboutme-paragraph {
-  text-align: center;
+.row {
+  flex-direction: row;
+  max-width: 85vw;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+
+.aboutme .page-title {
+  margin: 2vmin;
+  font-size: 7vmin;
+  font-weight: bold;
+  text-align: left;
   color: white;
-  margin-inline: 10vmin;
+}
+
+.aboutme .page-description {
+  margin: 1vmin;
+  padding-left: 5vmin;
+  text-align: left;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .aboutme .page-title {
+    text-align: center;
+  }
+
+  .aboutme .page-description {
+    text-align: left;
+  }
 }

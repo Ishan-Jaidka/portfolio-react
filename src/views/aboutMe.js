@@ -7,20 +7,18 @@ export default function AboutMe() {
   const text2 = `Whether I'm diving into the world of web user interfaces or geeking out over robotics, I love the learning process and thrive on making meaningful connections. Armed with a B.S. in Computer Science, my toolbox includes AWS, Node.js, React, Next.js, Javascript, Typescript, HTML/CSS, Java, C++, C#, Kotlin, Python, SQL, Arduino, and C.`;
   const text3 = `Let's chat code, share outdoor adventure stories, or discuss the latest tech trends. I'm always up for a good conversation!`;
   return (
-    <section className="aboutme">
-      <div className="aboutme">
+    <section className="aboutme row">
+      <div className="left">
+        <HeadShot />
+      </div>
+      <div className="aboutme col right">
         <div className="page-title" data-aos="fade-up">
           About Me
         </div>
-        <HeadShot />
         <div className="page-description" data-aos="fade-down">
-          {text}
-        </div>
-        <div className="aboutme-paragraph" data-aos="fade-down">
-          {text2}
-        </div>
-        <div className="aboutme-paragraph" data-aos="fade-down">
-          {text3}
+          <p>{text}</p>
+          <p>{text2}</p>
+          <p>{text3}</p>
         </div>
       </div>
     </section>
