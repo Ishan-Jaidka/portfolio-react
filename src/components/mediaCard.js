@@ -57,45 +57,29 @@ export default function MediaCard({
 
       <CardActions>
         {card_action_url && (
-          <Button
-            variant="outlined"
-            size="small"
-            color="warning"
-            href={card_action_url}
-            sx={{ bgcolor: "primary.main" }}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </Button>
+          <ActionButton url={card_action_url} label="GitHub" />
         )}
         {view_page_url && (
-          <Button
-            variant="outlined"
-            size="small"
-            color="warning"
-            href={view_page_url}
-            sx={{ bgcolor: "primary.main" }}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Page
-          </Button>
+          <ActionButton url={view_page_url} label="View Page" />
         )}
-        {data.awards && (
-          <Button
-            variant="outlined"
-            size="small"
-            color="warning"
-            href={data.awards}
-            sx={{ bgcolor: "primary.main" }}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Awards
-          </Button>
-        )}
+        {data?.awards && <ActionButton url={data.awards} label="View Awards" />}
       </CardActions>
     </Card>
+  );
+}
+
+function ActionButton({ url, label }) {
+  return (
+    <Button
+      variant="outlined"
+      size="small"
+      color="warning"
+      href={url}
+      sx={{ bgcolor: "primary.main" }}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {label}
+    </Button>
   );
 }
